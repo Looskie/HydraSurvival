@@ -1,3 +1,7 @@
+/*
+ * Website made by Devlooskie
+ * https://www.looskie.com/ - https://www.instagram.com/devlooskie/ - https://www.twitter.com/devlooskie/
+ */
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
@@ -53,6 +57,10 @@ h2 {
     font-size: 20px;
     color: rgb(73, 73, 73);
     text-align: center;
+}
+
+span {
+    color: #7E3838;
 }
 
 a { color: rgb(179, 179, 179); opacity: .6; transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -ms-transition: opacity .25s ease-in-out; -o-transition: opacity .25s ease-in-out; }
