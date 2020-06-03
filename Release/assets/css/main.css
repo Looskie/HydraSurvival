@@ -1,0 +1,328 @@
+/*
+ * Website made by Devlooskie
+ * https://www.looskie.com/ - https://www.instagram.com/devlooskie/ - https://www.twitter.com/devlooskie/
+ */
+ *, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {scroll-behavior: smooth;}
+body { overflow-x: hidden;}
+
+#loader {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: #000 url('../img/logo.png') no-repeat center center;
+    background-size: 120px;
+}
+
+nav {
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+}
+
+.logo {margin: 60px; height: 85px; width: auto;}
+.logo:focus {outline: none;}
+.thumbnail {
+    float: left;
+    padding: 50px;
+    padding-left: 100px;
+    height: 395px;
+    width: auto;
+}
+.latest {background-image: url(../img/update-imgs/latest.png);}
+.recent {background-image: url(../img/update-imgs/recent.png);}
+.old { background-image: url(../img/update-imgs/old.png);}
+
+ul {
+    margin-right: 12vh;
+    margin-top: 12vh;
+    float: right;
+    display: inline-block;
+}
+
+li {
+    text-transform: uppercase;
+    font-size: 1.35rem !important;
+    letter-spacing: 0.16em;
+    color: rgba(116, 120, 211, 0.65);
+    padding-right: 50px;
+    display: inline;
+    font-weight: 400;
+}
+
+main {
+    width: 100vw;
+}
+
+.home {
+    height: 100vh;
+    z-index: 1;
+    background-image: url(../img/background.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0px 0px #000,
+                inset 0 -125px 100px #000;
+}
+
+.container {
+    padding-left: 60px;
+    padding-top: 35vh;
+}
+
+.container-about {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about {
+    height: auto;
+    background-color: #000;
+}
+
+.news {
+    background-color: #000;
+}
+
+.connect {
+    background-color: #000;
+    height: 40vh;
+}
+
+.discord {
+    height: auto;
+    background-color: #000;
+    background-image: url(../img/connect-background.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 134px 60px #000,
+    inset 0 -125px 100px #000;
+}
+
+.discord-container {
+    padding-top: 90px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+iframe {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+}
+
+h1 {font-size: 2.6rem;color: rgba(116, 120, 211, 0.65);}
+h2 {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    letter-spacing: 0.16em;
+    color: rgba(116, 120, 211, 0.65);
+    text-align: center;
+    font-weight: 400
+}
+.middle {font-size: 17px;text-align: center;color: #666666;}
+h3 {font-size: 1.8rem;color: rgba(116, 120, 211, 0.65);}
+h4 {font-size: 1.8rem; color: #97979D;text-align: center; padding-bottom: 90px;}
+p {font-size: 1.6rem;color: #97979D;}
+
+.about p {
+    padding-left: 550px;
+    width: 70%;
+    padding-top: 90px;
+    margin: 0 auto;
+    text-align: center;
+    color: #7D7D7D;
+    letter-spacing: 0.09em;
+}
+
+button {
+    margin-top: 25px;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 13px;
+    padding-right: 13px;
+    background: rgba(116, 120, 211, 0.65);
+    font-size: 16px;
+    color: #A8A8A8;
+    border: none;
+    border-radius: 33px;
+    -webkit-border-radius: 33px;
+    -moz-border-radius: 33px;
+    -ms-border-radius: 33px;
+    -o-border-radius: 33px;
+}
+button:hover { cursor: pointer;}
+button:focus {opacity: .9; outline: 0}
+
+a { text-decoration: none; color: rgb(179, 179, 179); opacity: .6; transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -ms-transition: opacity .25s ease-in-out; -o-transition: opacity .25s ease-in-out; }
+a:hover { opacity: .9 }
+a:focus { opacity: .7 }
+.readmore { color: rgb(179, 179, 179); }
+span {font-size: 17px;text-align: center;color: #666666;}
+.ip { opacity: 1;}
+.discordspan {color: #7289DA; font-size: 1.8rem; background-color: transparent;}
+
+/* Rectangle CSS */
+.container-connect {
+    margin-top: 95px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+}
+
+.small-rectangle {
+    font-size: 23px;
+    padding-top: 7px;
+    font-weight: 400;
+    color: #202034;
+    background: #5F62A6;
+    width: 90px;
+    background: #5F62A6;
+    z-index: 1;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+}
+
+.bigger-rectangle {
+    font-size: 23px;
+    padding-top: 5px;
+    padding-left: 90px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: rgba(116, 120, 211, 0.65);
+    width: 300px;
+    margin-left: -90px;
+    z-index: 0;
+    background: #202034;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+a{
+    font-size: 1.2em;
+    white-space: normal;
+}
+a.rectangle
+{
+margin: 0 auto;
+width: 70%;
+height: 45px;
+padding: 5%;
+margin-top: 0%;
+background-color: #202034;
+opacity: 0.4;
+display: block;
+text-decoration: none;
+text-align: center;
+font-size: 12px;
+font-family: Comic Sans MS;
+position:relative;
+border-radius: 33px;
+}
+a:before{
+content:'';
+height:100%;
+background:#5F62A6;
+width:155px;
+border-radius: 33px;
+top:0;
+bottom:0;
+left:0;
+}
+
+/* Flex Grid */
+
+.flex-wrap {
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.dark {background-color: #1F1F1F;}
+
+
+
+@media only screen and (min-width: 1080px) {
+    .container-about {
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .about p {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1145) {
+    .thumbnail {
+        display: block;
+    }
+    .about p {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+/* 1002px */
+
+@media only screen and (max-width: 1000px) {
+    .container-about {
+        height: 110vh;
+    }
+    ul {
+        display: none;
+    }
+    .about p {
+        padding-top: 45px;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 886px) {
+
+    .about p {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+        margin: 0 auto;
+    }
+
+    .thumbnail {
+        float: none;
+        padding: 0;
+        margin: auto;
+        height: 300px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .thumbnail {
+        height: 250px;
+    }
+}
