@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- META TAGS-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HydraSurvival - HOME</title>
+        <meta name="description" content="HydraSurvival website, The most convienient Minecraft Survival server you will ever play on!">
+        <meta name="keywords" content="Minecraft, HydraSurvival, Hydra, Survival, Convienient Minecraft server, Minecraft server, HydraSurvival, devlooskie, looskie">
+        <!-- CSS, Icons, Fonts -->
+        <link rel="icon" href="assets/img/favicon.ico">
+        <link rel="stylesheet" href="assets/css/main.css?version=1">
+        <!-- Flex.css is made by TAILWIND -->
+        <link rel="stylesheet" href="assets/css/flex.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap">
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <body>
+        <div id="loader"></div>
+        <main>
+            <nav>
+                <a href="./"><img class="logo" src="assets/img/logo.png" alt="HydraSurvival Logo" draggable="false"></a>
+                <ul>
+                    <a href="./"><li>home</li></a>
+                    <a href="#about"><li>about</li></a>
+                    <a href="#news"><li>news</li></a>
+                    <a href="#about"><li>connect</li></a>
+                    <a href="#discord"><li>discord</li></a>
+                </ul>
+            </nav>
+            <div class="uptime">
+                <div class="uptime-container">
+                    <h6>uptime</h6>
+                    <span class="uptimespan">(This page is refreshed every 6 minutes)</span>
+                    <div class="service server">
+                        <div class="rectangle-status" id="server"></div>
+                        <div class="rectangle-service" id="servertext">server</div>
+                    </div>
+                    <div class="service bot">
+                        <div class="rectangle-status" id="bot"></div>
+                        <div class="rectangle-service" id="bottext">bot</div>
+                    </div>
+                    <div class="service website">
+                        <div class="rectangle-status" id="website"></div>
+                        <div class="rectangle-service" id="websitetext">website</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/uptime.js"></script>
+    </body>
+</html>
