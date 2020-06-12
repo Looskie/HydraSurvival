@@ -27,6 +27,30 @@ nav {
     height: 20vh;
 }
 
+#updatenav {
+    z-index: 1;
+    height: 135px;
+    position: fixed;
+    background-color: rgb(10, 10, 10);
+    opacity: .8;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+}
+.scrolled {
+    opacity: 1 !important;
+    transition: opacity 150ms linear;
+    -webkit-transition: opacity 150ms linear;
+    -moz-transition: opacity 150ms linear;
+    -ms-transition: opacity 150ms linear;
+    -o-transition: opacity 150ms linear;
+}
+#updatenav .logo {
+    margin: 27px;
+}
+#updatenav ul {
+    margin: 55px;
+}
+
 .logo {margin: 60px; height: 85px; width: auto;}
 .logo:focus {outline: none;}
 .thumbnail {
@@ -35,6 +59,11 @@ nav {
     padding-left: 100px;
     height: 395px;
     width: auto;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
 }
 .latest {background-image: url(../img/update-imgs/latest.png);}
 .recent {background-image: url(../img/update-imgs/recent.png);}
@@ -42,7 +71,7 @@ nav {
 
 ul {
     margin-right: 12vh;
-    margin-top: 12vh;
+    margin-top: 90px;
     float: right;
     display: inline-block;
 }
@@ -50,7 +79,7 @@ ul {
 li {
     text-transform: uppercase;
     font-size: 1.35rem !important;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.2em;
     color: rgba(116, 120, 211, 0.65);
     padding-right: 50px;
     display: inline;
@@ -87,6 +116,60 @@ main {
     text-align: center;
     padding-top: 25vh;
 }
+.updateinfo {
+    background-color: #1f1f1f;
+    text-align: center;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 180px;
+    border-radius: 33px;
+    -webkit-border-radius: 33px;
+    -moz-border-radius: 33px;
+    -ms-border-radius: 33px;
+    -o-border-radius: 33px;
+}
+.updateinfo h1 {
+    letter-spacing: 0.16em;
+    font-weight: 500;
+}
+.updateinfo ul {
+    float: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 55px;
+    padding-right: 10px;
+}
+.updateinfo li {
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 52px;
+    font-weight: 300;
+    color: #A8A8A8;
+    display: block;
+}
+.updateinfo p {
+    opacity: .6;
+    font-size: 23px;
+    color: #A8A8A8;
+    text-align: center;
+    padding-bottom: 33px;
+}
+.updateinfo a {
+    font-size: 20px;
+}
+.updatehome {
+    padding-top: 180px;
+    height: 100vh;
+    z-index: 1;
+    background-image: url(../img/update-background.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0px 0px #000,
+                inset 0 -125px 100px #000;
+}
 
 .about {
     height: auto;
@@ -95,6 +178,11 @@ main {
 
 .news {
     background-color: #000;
+    padding-left: 13px;
+    padding-right: 27px;
+}
+#updatenews {
+    padding-top: 150px;
 }
 
 .connect {
@@ -131,7 +219,7 @@ iframe {
     margin: 0 auto;
 }
 
-h1 {font-size: 2.6rem;color: rgba(116, 120, 211, 0.65);}
+h1 {font-size: 2.6rem !important;color: rgba(116, 120, 211, 0.65);}
 h2 {
     text-transform: uppercase;
     font-size: 2.2rem;
@@ -185,6 +273,10 @@ span {font-size: 17px;text-align: center;color: #666666;}
 .ip { opacity: 1;}
 .discordspan {color: #7289DA; font-size: 1.8rem; background-color: transparent;}
 .uptimespan {font-size: 1rem; text-align: center;}
+.updatelogs {font-weight: 400; font-size: 28px; display: block; padding-bottom: 25px;}
+#added { color: #4BA84F;}
+#changed { color: #A8994B;}
+#removed { color: #9D3030;}
 
 /* Rectangle CSS */
 .container-connect {
@@ -333,7 +425,13 @@ left:0;
 
 .dark {background-color: #1F1F1F;}
 
-
+.footer {
+    padding: 60px;
+    text-align: center;
+}
+.footer p {
+    font-size: 22px;
+}
 
 @media only screen and (min-width: 1080px) {
     .container-about {
@@ -348,6 +446,9 @@ left:0;
 }
 
 @media only screen and (max-width: 1145) {
+    #updatenav li {
+        padding-right: 15px;
+    }
     .thumbnail {
         display: block;
     }
@@ -357,7 +458,6 @@ left:0;
         width: 100%;
     }
 }
-
 /* 1002px */
 
 @media only screen and (max-width: 1065px) {
@@ -367,6 +467,18 @@ left:0;
     ul {
         display: none;
     }
+    .updateinfo ul {
+        display: block;
+    }
+
+    #updatenav ul {
+        display: block;
+    }
+
+    #updatenav li {
+        padding-right: 1px;
+    }
+
     .about p {
         padding-top: 45px;
         margin: 0;
