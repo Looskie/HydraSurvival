@@ -1,0 +1,21 @@
+/*
+ * Website made by Devlooskie
+ * https://www.looskie.com/ - https://www.instagram.com/devlooskie/ - https://www.twitter.com/devlooskie/
+ */
+/* Update CSS */
+#added { color: #4BA84F;}
+#changed { color: #A8994B;}
+#removed { color: #9D3030;}
+#updatenews {padding-top: 150px}
+#updatenav {z-index: 1;height: 135px;position: fixed;top: 0;background-color: rgb(10, 10, 10);opacity: .8;border-bottom-left-radius: 33px;border-bottom-right-radius: 33px}
+#updatenav .logo {margin: 27px}
+#updatenav ul {margin-top: 55px;margin-right:13px;}
+.updatelogs {font-weight: 400; font-size: 28px; display: block; padding-bottom: 25px;}
+.updateinfo {background-color: #1f1f1f;text-align: center;width: 75%;height: auto;margin: 0 auto;padding-top: 50px;margin-bottom: 180px;border-radius: 33px;-webkit-border-radius: 33px;-moz-border-radius: 33px;-ms-border-radius: 33px;-o-border-radius: 33px}
+.updateinfo h1 {letter-spacing: 0.1em;font-weight: 500}
+.updateinfo ul {float: none;padding: 0;margin: 0;padding-left: 55px;padding-right: 10px}
+.updateinfo li {text-transform: none;letter-spacing: normal;line-height: 52px;font-weight: 300;color: #A8A8A8;display: block}
+.updateinfo p {opacity: .6;font-size: 23px;color: #A8A8A8;text-align: center;padding-bottom: 33px}
+.updateinfo a {font-size: 20px}
+.updatehome {padding-top: 180px;height: 100vh;z-index: 1;background-image: url(../img/update-background.png);background-attachment: fixed;background-position: center center;background-repeat: no-repeat;box-shadow: inset 0 0px 0px #000,
+        inset 0 -125px 100px #000;}

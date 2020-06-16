@@ -3,13 +3,17 @@ $(document).ready(function(){
   function toggleSidebar() {
     $(".button").toggleClass("active");
     $("main").toggleClass("move-to-left");
-    $(".sidebar-item").toggleClass("active");
+    if ($(".sidebar-item").hasClass("active")) {
+      setTimeout(function() {$(".sidebar-item").toggleClass("active")},600);
+    } else {
+      $(".sidebar-item").toggleClass("active");
+    }
   }
   // ! Put auto callpaser here //
+  
   $(".button").on("click tap", function() {
     toggleSidebar();
   });
-
     $('.dark').hover(
         // trigger when mouse hover
         function(){
