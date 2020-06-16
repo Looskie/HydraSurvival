@@ -1,5 +1,15 @@
 $(window).on('load', function() {$('#loader').delay(1500).fadeOut('slow')});
 $(document).ready(function(){
+  function toggleSidebar() {
+    $(".button").toggleClass("active");
+    $("main").toggleClass("move-to-left");
+    $(".sidebar-item").toggleClass("active");
+  }
+  // ! Put auto callpaser here //
+  $(".button").on("click tap", function() {
+    toggleSidebar();
+  });
+
     $('.dark').hover(
         // trigger when mouse hover
         function(){

@@ -69,8 +69,8 @@ nav {
 .recent {background-image: url(../img/update-imgs/recent.png);}
 .old { background-image: url(../img/update-imgs/old.png);}
 
-ul {
-    margin-right: 12vh;
+#navul {
+    padding-right: 50px;
     margin-top: 90px;
     float: right;
     display: inline-block;
@@ -88,6 +88,7 @@ li {
 
 main {
     width: 100vw;
+    transition: transform .6s ease-in-out;
 }
 
 .home {
@@ -448,7 +449,7 @@ left:0;
     }
 }
 
-@media only screen and (max-width: 1145) {
+@media only screen and (max-width: 1145px) {
     #updatenav li {
         padding-right: 15px;
     }
@@ -463,11 +464,11 @@ left:0;
 }
 /* 1002px */
 
-@media only screen and (max-width: 1065px) {
+@media only screen and (max-width: 1054px) {
     .container-about {
         height: 110vh;
     }
-    ul {
+    #navul {
         display: none;
     }
     .updateinfo ul {
