@@ -1,12 +1,14 @@
 /*
- * Website made by Devlooskie
+ * Website made by DEVLOOSKIE
  * https://www.looskie.com/ - https://www.instagram.com/devlooskie/ - https://www.twitter.com/devlooskie/
  */
 
 /* Normals */
 *, *::before, *::after {box-sizing: border-box;padding: 0;margin: 0;font-family: 'Poppins', sans-serif;}
 html {scroll-behavior: smooth;}
-body { background-color: black; overflow-x: hidden;}
+body { background-color: black; overflow-x: hidden; scrollbar-width: thin;}
+body::-webkit-scrollbar {width: 11px}
+body::-webkit-scrollbar-thumb {background-color: #5F62A6;border-radius: 6px;border: 3px solid #000}
 main {width: 100vw;transition: transform .6s ease-in-out}
 #loader {position: fixed;z-index: 999;width: 100%;height: 100%;background: #000 url('../img/logo.png') no-repeat center center;background-size: 120px;}
 
@@ -18,7 +20,7 @@ li {text-transform: uppercase;font-size: 1.35rem !important;letter-spacing: 0.2e
 #navul {padding-right: 50px;margin-top: 43px;float: right;display: inline-block}
 
 /* Home CSS */
-.home {min-height: 100vh;z-index: 1;background-image: url(../img/background.png);background-attachment: fixed;background-position: center center;background-repeat: no-repeat;box-shadow: inset 0 0px 0px #000,
+.home {min-height: 100vh;z-index: 1;background-image: url(../img/background.png);background-attachment: fixed;background-position: center center;background-repeat: no-repeat; background-size:cover; box-shadow: inset 0 0px 0px #000,
         inset 0 -125px 100px #000}
 .container {padding-left: 60px;padding-top: 35vh}
 
@@ -28,7 +30,7 @@ li {text-transform: uppercase;font-size: 1.35rem !important;letter-spacing: 0.2e
 .thumbnail {float: left;padding: 50px;padding-left: 100px;height: 395px;width: auto;border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;-ms-border-radius:15px;-o-border-radius:15px}
 
 /* News CSS */
-.news {background-color: #000;padding-top:50px;padding-left: 13px;padding-right: 27px}
+.news {background-color: #000;padding-top:50px; padding: 0 20px;margin:0 auto;}
 .flex-wrap {padding-top: 50px;padding-bottom: 150px;}
 .latest {background-image: url(../img/update-imgs/latest.png);}
 .recent {background-image: url(../img/update-imgs/recent.png);}
@@ -69,6 +71,12 @@ button {margin-top: 25px;text-align: center;padding-top: 6px;padding-bottom: 6px
 a { text-decoration: none; color: rgb(179, 179, 179); opacity: .6; transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -ms-transition: opacity .25s ease-in-out; -o-transition: opacity .25s ease-in-out; }a:hover { opacity: .9 }a:focus { opacity: .7 }
 span {font-size: 17px;text-align: center;color: #666666;}
 
+/* alerts  provided by SweetAlerts2*/
+.swal2-popup {border-radius: 23px !important;background-color: #1f1f1f !important;}
+.swal2-title {color: #97979D !important;font-size: 1.3rem !important}
+.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long {right: .5em !important}
+.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip {left: .5em !important;top: 2.8em !important}
+
 /* Media Queries */
 @media only screen and (min-width: 1080px) {
     .container-about {height: 75vh}
@@ -90,7 +98,7 @@ span {font-size: 17px;text-align: center;color: #666666;}
 }
 @media only screen and (max-width: 886px) {
     .about p {width: 90%;padding: 0;margin: 0;margin: 0 auto}
-    .thumbnail {float: none;padding: 0;margin: auto;height: 300px;display: block}
+    .thumbnail {float: none;padding: 0 20px;margin: auto;height: 300px;display: block}
 }
 @media only screen and (max-width: 600px) {
     .thumbnail {height: 250px;}

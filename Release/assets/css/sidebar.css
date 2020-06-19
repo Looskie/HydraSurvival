@@ -10,7 +10,8 @@
     box-shadow: inset 0 0px 0px #000,
     inset 0 -125px 100px #000;
   }
-  
+  .sidebar-nav.active { display: inline-block}
+  .main-nav.active { display:none}
   .bar {display: block;height: 2px;width: 30px;background-color: #3F3F75;margin: 7px auto}
   .button {cursor: pointer;display: inline-block;width: auto;margin: 0 auto;-webkit-transition: all .7s ease;-moz-transition: all .7s ease;-ms-transition: all .7s ease;-o-transition: all .7s ease;transition: all .7s ease;padding-top: 48px}
   .nav-right {position: fixed;right: 30px;top: 20px}
@@ -19,6 +20,7 @@
   .middle {margin: 0 auto;}
   .bar {-webkit-transition: all .7s ease;-moz-transition: all .7s ease;-ms-transition: all .7s ease;-o-transition: all .7s ease;transition: all .7s ease}
   .nav-right.visible-xs .active .bar {background-color: #3F3F75;-webkit-transition: all .7s ease;-moz-transition: all .7s ease;-ms-transition: all .7s ease;-o-transition: all .7s ease;transition: all .7s ease}
+  .button.active .top, .button.active .bottom { background-color: #b1b1b1!important;}
   .button.active .top {-webkit-transform: translateY(15px) rotateZ(45deg);-moz-transform: translateY(15px) rotateZ(45deg);-ms-transform: translateY(15px) rotateZ(45deg);-o-transform: translateY(15px) rotateZ(45deg);transform: translateY(15px) rotateZ(45deg)}
   .button.active .bottom {transform: translateY(-24px) rotateZ(-45deg);}
   .button.active .middle {width: 0}
